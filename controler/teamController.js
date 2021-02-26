@@ -73,7 +73,6 @@ const getDashboard = async(req,res)=>{
 
         const players = await teamSchema.find()
         res.status(200).json(players)
-
     } catch (error) {
         res.status(400).json({
             message: error.message
